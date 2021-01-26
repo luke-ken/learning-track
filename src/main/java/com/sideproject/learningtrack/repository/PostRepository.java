@@ -1,13 +1,13 @@
 package com.sideproject.learningtrack.repository;
 
-import com.sideproject.learningtrack.domain.GoalProgress;
+import com.sideproject.learningtrack.domain.Post;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface GoalProgressRepository extends MongoRepository<GoalProgress, String> {
+public interface PostRepository extends MongoRepository<Post, String> {
 
-    List<GoalProgress> findAllByName(String name);
+    List<Post> findAllByTopic(String topic);
 }

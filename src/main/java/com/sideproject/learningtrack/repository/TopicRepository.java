@@ -1,9 +1,9 @@
 package com.sideproject.learningtrack.repository;
 
-import com.sideproject.learningtrack.domain.Goal;
+import com.sideproject.learningtrack.domain.Topic;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface GoalRepository extends MongoRepository<Goal, String> {
+public interface TopicRepository extends MongoRepository<Topic, String> {
 
     void deleteByName(String name);
 }

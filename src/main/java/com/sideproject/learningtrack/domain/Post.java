@@ -19,13 +19,13 @@ public class Post {
     private String title;
     private String topic;
     private int duration;
-    private String note;
+    private String content;
 
-    public Post(String title, String topic, int duration, String note) {
+    public Post(String title, String topic, int duration, String content) {
         this.title = title;
         this.topic = topic;
         this.duration = duration;
-        this.note = note;
+        this.content = content;
     }
 
 }

@@ -1,16 +1,15 @@
 package com.sideproject.learningtrack.domain;
 
 import lombok.AccessLevel;
-import lombok.Getter;
+import lombok.Data;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "topic")
-@Getter
-@Setter
-public class Topic {
+@Document(collection = "tag")
+@Data
+public class Tag {
 
     @Id
     @Setter(AccessLevel.NONE)
@@ -19,11 +18,11 @@ public class Topic {
     @Indexed(unique = true)
     private String name;
 
-    private String type;
+    private String description;
 
-    public Topic(String name, String type) {
+    public Tag(String name, String description) {
         this.name = name;
-        this.type = type;
+        this.description = description;
     }
 
 }

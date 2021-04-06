@@ -1,15 +1,13 @@
 package com.sideproject.learningtrack.domain;
 
 import lombok.AccessLevel;
-import lombok.Getter;
+import lombok.Data;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-
 @Document(collection = "post")
-@Getter
-@Setter
+@Data
 public class Post {
 
     @Id
@@ -17,14 +15,14 @@ public class Post {
     private String id;
 
     private String title;
-    private String topic;
-    private int duration;
+    private String[] tags;
+    private String timestamp;
     private String content;
 
-    public Post(String title, String topic, int duration, String content) {
+    public Post(String title, String[] tags, String timestamp, String content) {
         this.title = title;
-        this.topic = topic;
-        this.duration = duration;
+        this.tags = tags;
+        this.timestamp = timestamp;
         this.content = content;
     }
 

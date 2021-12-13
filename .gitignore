@@ -12,3 +12,7 @@ buildNumber.properties
 
 .idea/
 .mvn/
+
+image-upload-dir/
+
+*.iml

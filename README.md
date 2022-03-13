@@ -34,6 +34,11 @@ After the successful build, run the following to start up the app:
 docker compose up --build
 ```
 
+## User credentials
+_Username_: guest
+
+_Password_: guest
+
 ### _Side note_:
 If you want to run the app with an older version of Java and Maven, change these following configuration:
 * `java.version` inside the `pom.xml` file (you might also need to change the `lombok` dependency version)

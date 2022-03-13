@@ -2,7 +2,6 @@ version: "3.8"
 services:
     lsdp-app:
         build: .
-#        image: "lsdp-app:latest"
         container_name: backend
         restart: always
         ports:
@@ -14,8 +13,4 @@ services:
         container_name: database
         restart: always
         volumes:
-          - D:/docker-mongo-data/data:/data/db
-#          - /data/db
-#        ports:
-#          - 27017:27017
-
+          - /data/db

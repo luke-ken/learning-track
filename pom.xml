@@ -15,7 +15,7 @@
     <description>A personal diary of learning and reading</description>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17</java.version>
     </properties>
 
     <dependencies>
@@ -94,14 +94,14 @@
             <groupId>net.minidev</groupId>
             <artifactId>asm</artifactId>
             <version>1.0.2</version>
-<!--            <scope>test</scope>-->
+            <!--<scope>test</scope>-->
         </dependency>
 
         <!--Dev dependencies-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.16</version>
+            <version>1.18.22</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

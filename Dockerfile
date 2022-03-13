@@ -17,7 +17,7 @@
 #COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
 #ENTRYPOINT ["java", "-cp", "app:app/lib/*", "com.sideproject.learningtrack.LearningTrackApplication"]
 
-FROM openjdk:8-jdk-alpine
+FROM openjdk:17-oracle
 VOLUME /tmp
 COPY target/*.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
